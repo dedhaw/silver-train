@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavbarStyles = styled.nav`
   background: rgba(0, 0, 0, 0);
