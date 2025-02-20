@@ -9,12 +9,12 @@ const NavbarStyles = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid black;
 `;
 
 const NavLinks = styled.div`
   display: flex;
-  gap: 1.5rem;
+  gap: 5rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -22,14 +22,32 @@ const NavLinks = styled.div`
   a {
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+    /* Add hover underline animation */
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background-color: rgb(26, 119, 201);
+      transition: all 0.3s ease-in-out;
+      transform: translateX(-50%);
+    }
     &:hover {
-      text-decoration: underline;
+      color: rgb(26, 119, 201);
+    }
+    &:hover::after {
+      width: 100%;
     }
   }
 `;
 
 const Brand = styled.img`
-  height: 40px;
+  height: 50px;
   width: auto;
   margin-left: auto;
   color: black;
@@ -39,13 +57,13 @@ const Navbar = () => {
   return (
     <NavbarStyles>
       <NavLinks>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#">Mens</a>
+        <a href="#">Womens</a>
+        <Link to="/about">About</Link>
         <a href="#">Contact</a>
       </NavLinks>
       <Link to={"/"}>
-        <Brand src="" alt="Brand" />
+        <Brand src="/temp.png" alt="Brand" />
       </Link>
     </NavbarStyles>
   );
