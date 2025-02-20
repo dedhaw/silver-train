@@ -47,6 +47,7 @@ const HeroSubText = styled.p`
 
 export default function Hero() {
   const [opacity, setOpacity] = useState(1);
+  opacity;
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
