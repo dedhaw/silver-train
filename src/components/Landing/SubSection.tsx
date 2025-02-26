@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "../GlobalStyles";
 import styled from "styled-components";
 
