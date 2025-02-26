@@ -1,14 +1,16 @@
-import Hero from "../components/ComingSoonComponents/Hero";
-import LearnMore from "../components/ComingSoonComponents/LearnMore";
-import Navbar from "../components/ComingSoonComponents/Navbar";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Landing/Hero";
+import SubSection from "../components/Landing/SubSection";
+import Footer from "../components/Footer";
 
 export default function Landing() {
   return (
     <>
       <Navbar />
       <Hero />
-      <LearnMore />
-      <div style={{ height: "100vh" }}></div>
+      <br />
+      <SubSection />
+      <Footer />
     </>
   );
 }
