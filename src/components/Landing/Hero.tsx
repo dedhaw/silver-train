@@ -1,4 +1,4 @@
-import { HeroContainer, HeroText, HeroSubText } from "../GlobalStyles";
+import { HeroContainer, HeroText } from "../GlobalStyles";
 import { useEffect, useState } from "react";
 
 export default function Hero() {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Logo, Container } from "./GlobalStyles";
+import { Logo } from "./GlobalStyles";
 
 const FooterContainer = styled.div`
   color: white;
