@@ -41,7 +41,6 @@ export default function Contact() {
         <p>Need more information?</p>
         <Container>
           <a href="mailto:algsnowcompany@gmail.com">Email us</a>
-          <a href="tel:+15103017718">(510)-301-7718</a>
         </Container>
       </Section>
       <br />
