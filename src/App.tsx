@@ -1,14 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import Landing from "./views/Landing";
 import PNF from "./views/PageNotFound";
-import ComingSoon from "./views/ComingSoon";
+import Apparel from "./views/Apparel";
+import Mission from "./views/Mission";
+import Contact from "./views/Contact";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+      <Route path="/apparel" element={<Apparel />} />
+      <Route path="/mission" element={<Mission />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/*" element={<PNF />} />
-      <Route path="/about" element={<ComingSoon />} />
     </Routes>
   );
 }

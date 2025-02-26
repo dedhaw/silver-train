@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Logo } from "./GlobalStyles";
 
 const NavbarStyles = styled.nav`
   background: white;
@@ -9,7 +10,7 @@ const NavbarStyles = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  border-bottom: 2px solid black;
+  // border-bottom: 2px solid black;
 `;
 
 const NavLinks = styled.div`
@@ -46,24 +47,16 @@ const NavLinks = styled.div`
   }
 `;
 
-const Brand = styled.img`
-  height: 50px;
-  width: auto;
-  margin-left: auto;
-  color: black;
-`;
-
 const Navbar = () => {
   return (
     <NavbarStyles>
       <NavLinks>
-        <a href="#">Mens</a>
-        <a href="#">Womens</a>
-        <Link to="/about">About</Link>
-        <a href="#">Contact</a>
+        <Link to="/apparel">Apparel</Link>
+        <Link to="/mission">Our Story</Link>
+        <Link to="/contact">Contact</Link>
       </NavLinks>
       <Link to={"/"}>
-        <Brand src="/temp.png" alt="Brand" />
+        <Logo src="/alt-logo.png" alt="Brand" />
       </Link>
     </NavbarStyles>
   );
