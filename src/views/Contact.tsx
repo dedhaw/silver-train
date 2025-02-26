@@ -27,7 +27,7 @@ export default function Contact() {
       <Section style={{ height: "60vh" }}>
         <p>Check us out at:</p>
         <Container>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/algofficial/" target="_blank">
             Instagram
           </a>
           <a href="" target="_blank">
