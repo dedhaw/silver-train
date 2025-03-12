@@ -1,5 +1,6 @@
 import { Section, Container } from "../GlobalStyles";
 import styled from "styled-components";
+import { useState, useEffect } from "react";
 
 const LeftColumn = styled.div`
   flex: 1;
@@ -21,10 +22,23 @@ const RightColumn = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: inherit;
+  min-height: inherit;
 `;
 
 export default function About() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); 
+
   return (
     <div id="about">
       <br />
@@ -68,7 +82,7 @@ export default function About() {
             </ul>
           </Section>
         </LeftColumn>
-        <RightColumn />
+        {width > 1000  && <RightColumn />}
       </Container>
       <br />
     </div>
