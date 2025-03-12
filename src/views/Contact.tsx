@@ -27,7 +27,7 @@ export default function Contact() {
       <Section style={{ height: "60vh" }}>
         <p>Check us out at:</p>
         <Container>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/algofficial/" target="_blank">
             Instagram
           </a>
           <a href="" target="_blank">
@@ -41,7 +41,6 @@ export default function Contact() {
         <p>Need more information?</p>
         <Container>
           <a href="mailto:algsnowcompany@gmail.com">Email us</a>
-          <a href="tel:+15103017718">(510)-301-7718</a>
         </Container>
       </Section>
       <br />

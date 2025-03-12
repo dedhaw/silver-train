@@ -73,7 +73,6 @@ export default function Footer() {
           <FooterContent>
             <h2>contact us</h2>
             <a href="mailto:algsnowcompany@gmail.com">Email us</a>
-            <a href="tel:+15103017718">(510)-301-7718</a>
           </FooterContent>
         </FooterContainer>
       </div>

@@ -22,7 +22,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 export const HeroContainer = styled.div`
@@ -59,6 +59,10 @@ export const HeroText = styled.h1`
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   opacity: 0;
   animation: ${fadeIn} 6s ease-out forwards;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 60px;
+  }
 `;
 
 export const HeroSubText = styled.p`
