@@ -96,3 +96,102 @@ export const Section = styled.section`
     list-style-position: inside;
   }
 `;
+
+// Navbar
+export const NavbarStyles = styled.nav`
+  background: white;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+`;
+
+export const NavLinks = styled.div`
+  display: flex;
+  gap: 5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .ham-burger-menu {
+      display: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background-color: rgb(26, 119, 201);
+      transition: all 0.3s ease-in-out;
+      transform: translateX(-50%);
+    }
+    &:hover {
+      color: rgb(26, 119, 201) !important;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    a {
+        display: none;
+    }
+
+    left: 90%;
+    up: 10px;
+    
+    .ham-burger-menu {
+      margin-top: 10px;
+      display: flex !important;
+    }
+  }
+`;
+
+export const SideBar = styled.div`
+display: inline;
+position: fixed;
+top: 0;
+left: -250px;
+width: 250px;
+height: 100%;
+background-color: #333333;
+color: #ffffff;
+transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+padding: 20px;
+box-shadow: -2px 0 5px rgba(42, 42, 42, 0.5);
+font-size: 22px;
+z-index: 1;
+visibility: hidden;
+
+&.open {
+  transform: translateX(250px);
+  visibility: visible;
+}
+
+ul {
+margin-top: 50px !important;
+list-style-type: none;
+padding: 0;      
+margin: 0;
+}
+
+ul li {        
+line-height: 60px;
+}
+
+a {
+color: white;   
+}
+`;
