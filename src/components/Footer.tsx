@@ -18,6 +18,10 @@ const FooterContainer = styled.div`
   p {
     margin-top: 1rem;
   }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 10px !important;
+  }
 `;
 
 const FooterContent = styled.div`
@@ -43,6 +47,10 @@ const FooterContent = styled.div`
     &:hover {
       color: rgb(26, 119, 201);
     }
+      
+    @media screen and (max-width: 1000px) {
+      font-size: 10px !important;
+    }
   }
 `;
 
@@ -59,8 +67,8 @@ export default function Footer() {
               <Logo style={{ margin: "0px" }} src="/logo.png" alt="Brand" />
             </Link>
             <p style={{ textAlign: "left", margin: "0", padding: "0px" }}>
-              ALG Snow stands behind The Better Mountain Project donates 20% of
-              every purchase to support underprivileged kids with snow sports
+              ALG Snow stands behind The Better Mountain Project and donates 20% of
+              every purchase to support underprivileged kids for snow sports
               opportunities.
             </p>
           </FooterContent>
@@ -73,7 +81,6 @@ export default function Footer() {
           <FooterContent>
             <h2>contact us</h2>
             <a href="mailto:algsnowcompany@gmail.com">Email us</a>
-            <a href="tel:+15103017718">(510)-301-7718</a>
           </FooterContent>
         </FooterContainer>
       </div>
