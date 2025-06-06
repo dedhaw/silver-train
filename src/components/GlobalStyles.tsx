@@ -164,38 +164,38 @@ export const NavLinks = styled.div`
 `;
 
 export const SideBar = styled.div`
-display: inline;
-position: fixed;
-top: 0;
-left: -250px;
-width: 250px;
-height: 100%;
-background-color: #333333;
-color: #ffffff;
-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-padding: 20px;
-box-shadow: -2px 0 5px rgba(42, 42, 42, 0.5);
-font-size: 22px;
-z-index: 1;
-visibility: hidden;
+  display: inline;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333333;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(42, 42, 42, 0.5);
+  font-size: 22px;
+  z-index: 1;
+  visibility: hidden;
 
-&.open {
-  transform: translateX(250px);
-  visibility: visible;
-}
+  &.open {
+    transform: translateX(250px);
+    visibility: visible;
+  }
 
-ul {
-margin-top: 50px !important;
-list-style-type: none;
-padding: 0;      
-margin: 0;
-}
+  ul {
+    margin-top: 50px !important;
+    list-style-type: none;
+    padding: 0;      
+    margin: 0;
+  }
 
-ul li {        
-line-height: 60px;
-}
+  ul li {        
+    line-height: 60px;
+  }
 
-a {
-color: white;   
-}
+  a {
+    color: white;   
+  }
 `;

@@ -4,6 +4,8 @@ import Apparel from "./views/Apparel";
 import Mission from "./views/Mission";
 import Contact from "./views/Contact";
 
+import './App.css'
+
 function App() {
   return (
     <Routes>
