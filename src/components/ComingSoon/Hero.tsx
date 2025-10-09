@@ -21,7 +21,6 @@ export default function Hero() {
     <>
       <HeroContainer style={{ backgroundImage: 'url("/heroBg.jpg")' }}>
         <HeroText>apparel coming soon</HeroText>
-        <HeroSubText>winter 2025/2026</HeroSubText>
       </HeroContainer>
     </>
   );
