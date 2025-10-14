@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HeroContainer, HeroText, HeroSubText } from "../GlobalStyles";
+import { HeroContainer, HeroText } from "../GlobalStyles";
 
 export default function Hero() {
   const [opacity, setOpacity] = useState(1);
